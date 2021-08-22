@@ -6,26 +6,26 @@ import java.util.HashMap;
 import java.util.List;
 @Service
 public class UserServiceHashMap implements UserService{
-    private final HashMap<String, User> usersMap = new HashMap();
+    private final HashMap<String, User> usersHashMap = new HashMap();
     @Override
     public User create(User user) {
-        return usersMap.put(user.getId(), user);
+        return usersHashMap.put(user.getId(), user);
     }
     @Override
     public User findById(String id) {
-        User user = usersMap.get(id);
+        User user = usersHashMap.get(id);
         return user;
     }
     @Override
     public List<User> all() {
-        return new ArrayList<User>(usersMap.values());
+        return new ArrayList<User>(usersHashMap.values());
     }
     @Override
     public void deleteById(String id) {
-        usersMap.remove(id);
+        usersHashMap.remove(id);
     }
     @Override
     public User update(User user, String userId) {
-        return usersMap.put(userId, user);
+        return usersHashMap.put(userId, user);
     }
 }
