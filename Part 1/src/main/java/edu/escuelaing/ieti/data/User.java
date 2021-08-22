@@ -1,17 +1,16 @@
 package edu.escuelaing.ieti.data;
-import java.util.Date;
 public class User {
     private String id;
     private String name;
     private String email;
     private String lastName;
-    private Date createdAt;
+    private String createdAt;
     public User(String id, String name, String email, String lastName, String createdAt) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.lastName = lastName;
-        this.createdAt = new Date();
+        this.createdAt = createdAt;
     }
     public String getId(){
         return this.id;
@@ -37,10 +36,10 @@ public class User {
     public void setLastName(String lastName){
         this.lastName = lastName;
     }
-    public Date getCreatedAt(){
+    public String getCreatedAt(){
         return this.createdAt;
     }
     public void setCreatedAt(String createdAt){
-        this.createdAt = new Date();
+        this.createdAt = createdAt;
     }
 }
