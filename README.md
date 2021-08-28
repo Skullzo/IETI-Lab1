@@ -275,6 +275,10 @@
 8. Implement you *TaskController* (try to avoid copy paste, use the User Microservice as reference but try doing it consciously).
 9. Test ALL the endpoints of your API using PostMan or any other tool of your preference.
 
+## Link to main repository
+
+https://github.com/ada-school/spring-boot-rest-api
+
 ## Autor
 [Alejandro Toro Daza](https://github.com/Skullzo)
 ## Licencia & Derechos de Autor
